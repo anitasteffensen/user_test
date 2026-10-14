@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webtilgængelighed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_content"><img class="iba" alt="iba multimediedesign logo" src="logo.png">
+
+      <!--Navigation til desktopversion-->
+      <nav class="nav_menu">
+        <ul class="menu_text2">
+          <li><a class="menu_item2" href="index.html">Webtilgængelighed</a></li>
+          <li class="space">|</li>
+          <li><a class="menu_item2" href="brugertest.html">Brugertest</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="colour"></div>
+
+    <!-- Burgermenu til mobilversionen-->
+    <div class="hamburger-menu">
+      <input id="menu_toggle" type="checkbox" />
+      <label class="menu_btn" for="menu_toggle">
+        <span></span>
+      </label>
+
+      <nav class="menu_box">
+        <div class="search">
+          <input type="text" placeholder="Søg..." name="search">
+          <div class="search_button"></div>
+        </div>
+        <ul class="menu_text">
+          <li><a class="menu_item" href="index.html">Webtilgængelighed</a></li>
+          <li><a class="menu_items" href="#pour">POUR</a></li>
+          <li><a class="menu_items" href="#crap">CRAP-Principperne</a></li>
+          <li><a class="menu_items" href="#gestalt">Gestaltlovene</a></li>
+          <li><a class="menu_item" href="brugertest.html">Brugertest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Laver en div/wrapper som er omkring main-content og sidebar, ligesom det er beskrevet på dev.to, da <main> kun må have et barn.-->
+  <div class="wrapper">
+    <div class="sidebar">
+      <h5>Tilgængelighed</h5>
+      <ul class="sidebar_list">
+        <li class="sidebar_"><a href="#intro">Introduktion</a></li>
+        <li class="sidebar_"><a href="#pour">POUR</a></li>
+        <li class="sidebar_2"><a href="#per">Opfattelig</a></li>
+        <li class="sidebar_2"><a href="#op">Anvendelig</a></li>
+        <li class="sidebar_2"><a href="#un">Forståelig</a></li>
+        <li class="sidebar_2"><a href="#ro">Robust</a></li>
+        <li class="sidebar_"><a href="#crap">C.R.A.P</a></li>
+        <li class="sidebar_2"><a href="#con">Kontrast</a></li>
+        <li class="sidebar_2"><a href="#rep">Repetition</a></li>
+        <li class="sidebar_2"><a href="#cen">Centrering</a></li>
+        <li class="sidebar_2"><a href="#nae">Nærhed</a></li>
+        <li class="sidebar_"><a href="#gestalt">Gestaltlovene</a></li>
+        <li class="sidebar_2"><a href="#nae2">Nærhed</a></li>
+        <li class="sidebar_2"><a href="#ligh">Lighed</a></li>
+        <li class="sidebar_2"><a href="#luk">Lukkethed</a></li>
+        <li class="sidebar_2"><a href="#kon">Kontinuitet</a></li>
+        <li class="sidebar_2"><a href="#fb">Figur og baggrund</a></li>
+      </ul>
+    </div>
+    <main>
+      <!-- Nedenstående laves for at vi kan style hovedelementet i css'en -->
+      <section>
+        <h1>Den gode digitale oplevelse</h1>
+
+        <p>Når man, som Danmark, er på toppen af listen over mest digitaliserede lande i Europa, bliver man også nødt til at adressere de problemstillinger, som digitaliseringen kan føre med sig. En af disse udfordringer kunne for eksempel (f.eks.) være udskiftning af fysiske buskøreplaner til et digitalt alternativ (eksempelvis en app).</p>
+        <p>I den forbindelse er det nødvendigt at have fokus på webtilgængelighed, da det ikke er alle som kan hive entelefon op ad lommen og have adgang til internettet.</p>
+
+        <!--Nød til at lave en div for billedet, da det ellers påvirker tidligere tags og ender med at se helt gakgak ud-->
+
+        <img class="digital_i" src="digital.png"
+          alt="illustration af digitalisering: Fra papir til digitale løsninger">
+
+        <h2 id="intro">Hvad er webtilgængelighed egentlig?</h2>
+        <p>Helt kort, så handler webtilgængelighed om, at <b>enhver</b> skal kunne bruge den pågældende hjemmeside. Det vil sige, at folk uanset om de har en funktionsnedsættelse eller ej kan anvende siden.</p>
+        <p>Loven om webtilgængelighed er baseret på den internationale standard Web Content Accessibility Guidelines 2.1 (WCAG 2.1)<sub>1</sub>, som stiller krav til hjemmesider og deres tilgængelighed. WCAG har dog særligt fokus på brugere med forskellige former for funktionsnedsættelse, såsom syns-, hørelse-, motorisk- eller kognitiv
+        nedsættelse. </p>
+
+        <img class="web_i" src="webtilgængelighed_banner-2.png"
+          alt="banner som fremviser forskellige funktionsnedsættelser: neurologisk, motorisk,kognitiv, syn- og hørelse">
+
+        <h3>Nødvendig for nogle - godt for alle</h3>
+
+        <p>Ifølge Verdens Sundhedsorganisation (WHO)<sub>2</sub>, så har cirka 15% af verdens befolkning - eller 1 ud af 6 - en form for permanent funktionsnedsættelse, som kan have betydning for deres brug af digitale midler.
+        </p>
+       <p>Men ved at leve op til kravene fra "Webtilgængelighedsloven", så kan man sikre sig, at folk med funktionsnedsættelse kan være en aktiv del af det digitale samfund på lige fod med andre. </p>
+        <p>Så selvom at kravene er en nødvendighed for nogle, så gavner de alle, som begår sig i den digitale verden. Udover at sikre en god oplevelse, så kan kravene også være med til at udviklere tager stilling til om hjemmesidens indhold og design er brugervenlig.</p>
+        <p>Men hvordan sikrer man sig at ens hjemmeside er tilgængelig for alle?</p>
+        <p>Det er præcis det, vi vil gennemgå på denne side.</p>
+    
+        
+
+
+        <h2 id="pour">POUR</h2>
+        <p>For at ens hjemmeside overholder webtilgængelighedsloven, er der blevet opsat 4 hovedprincipper som man skal følge. De fire hovedprincipper er baseret på retningslinjerne i WCAG 2.1<sub>1</sub> og er bedre kendt under betegnelsen "POUR", som står for henholdsvis: </p>
+        <ul class="pour">
+          <li><b>P</b>erceivable (Opfattelig)</li>
+          <li><b>O</b>perable (Operationel)</li>
+          <li><b>U</b>nderstandable (Forståelig)</li>
+          <li><b>R</b>obust</li>
+        </ul>
+        <p>Under principperne er der 13 retningslinjer og dertil succeskriterier. Dog kommer vi ikke ind på alle retningslinjerne, i stedet har vi udvalgt nogle af dem, som kan ses på denne hjemmeside</p>
+
+        <img class="pour_i" src="pour.png"
+          alt="illustration af de fire hovedprincipper i pour, og hvad de hver står for. 1. Opfattelig betyder, at information og komponenter skal kunne opfattes uafhængig af om der anvendes hjælpeteknologier. 2. Anvendlig betyder, at komponenter og navigation skal kunne betjenes af hjælpeteknologier og ikke kun mus. 3. Forståelig betyder, at layout og indhold skal være opsat på en logisk og struktureret måde, så brugeren tydligt kan forstå indholdet og hvordan siden anvendes. 4. Robust betyder at hjemmesiden skal opdateres så at ny hjælpeteknologi kan bruges til aflæsning, samt med korrekt opmærkning af elementer">
+
+        <h3 id="per">Opfattelig (Perceivable)</h3>
+        <p>Din hjemmeside skal være let at forstå og opfatte uafhængig af om brugeren anvender hjælpeteknologi f.eks. i form af en skærmlæser.</p>
+        <p>Men hvordan sikrer man, at ikke-tekstbar indhold såsom, billeder og videoer er tilgængelig for brugere f.eks. med nedsat syn?</p>
+        <p>Det er simpelt nok.</p>
+        <p>Når du har indsat et billede i din html, så brug alt-attributten, som gør det muligt at komme med en
+        alternativ beskrivelse for billedet. </p>
+        <p>Nedenstående er et eksempel fra denne side, mere præcis introduktions-afsnittet. Vi har efter billedet indsat
+        en alt-attribut som beskriver billedet gennem en simpel tekst. Denne tekst gør det muligt for brugere med funktionsnedsættelse eller f.eks. dårlig internetadgang at tilgå samme information som andre, uden at gå klip
+        af noget. </p>
+        <img class="per_i" src="screenshot1.png" alt="skærmbillede af alternativ tekst fra billedet digital_i">
+        <h3 id="op">Operationel (Operable)</h3>
+        <p>Brugergrænsefladen skal være nem at navigere og betjene med og uden hjælpeteknologi som f.eks. tastaturnavigation og undgåelse af utilsigtede handlinger.</p>
+        <p>Det skal være muligt for brugere at navigere direkte til det indhold, som vedkommende ønsker at tilgå. Dette kan gøres på flere måder, men nemmest er at vælge meningsfulde overskrifter for afsnittene, så brugeren nemt
+        forstår hvad afsnittet handler om ud fra overskriften.</p>
+        <p>Det gøres ved brug af h1, h2, h3 og andre HTML-overskrift tags. De bruges til at definere overskrifter og strukturere indholdet hierarkisk.</p>
+        <ul class="op_l">
+          <li>h1 anvendes til den mest betydningsfulde overskrift på siden, som i denne sides tilfælde er “Webtilgængelighed”, da det er det som hele siden omhandler.</li>
+          <li>h2 bruges til underordnet overskrifter, der er lige under h1 i hierarkiet. Det er f.eks. “POUR” og “C.R.A.P”.</li>
+          <li>h3 bruges til yderligere underdelinger af indhold under h2. F.eks. hvert at pour-principperne, “opfattelig”, “operational” osv. </li>
+        </ul>
+        <p>Derudover så bruges de valgte overskrifter også i udviklingen af burgermenuen, sidebar, søgefelt og lignende. Disse gør det muligt for brugeren at springe rundt på siden og finde det ønskede afsnit.</p>
+        <h3 id="un"> Forståelig (Understandable)</h3>
+        <p>Helt overordnet skal hjemmesiden og dets information kunne forstås og brugeren skal kunne navigere rundt på den uden problemer.</p>
+        <p>Derfor er det vigtigt at navigationen på siden er brugervenlig og forudsigelig. Det kan gøres ved at man vælger komponenter som bliver brugt på andre sider og sørger for at de opfører sig ligesom på andre sider, så det er familiært for brugeren. Plus at brugeren har en forventning om hvad der vil ske når der trykkes på dem.
+        </p>
+        <p>Et eksempel på dette fra denne side er burgermenuen på mobilversionen og sidebaren på desktopversionen. Når der trykkes på dem, forventes der, at man bliver dirigeret rundt til det pågældende afsnit, som man har klikket på. </p>
+        <p>Det er også her, at man kan bruge <b>:hover</b>-effekten, så brugeren ved at du kan klikke på den. Det er et konsekvent design valg, vi har valgt på denne side i menuen.</p>
+        <h3 id="ro">Robust</h3>
+        <p>HTML’en skal være kodet korrekt, og hjemmesiden skal generelt holde sig opdateret, så brugere med hjælpeteknologier kan tilgå og forstå hjemmesiden. </p>
+        <p>Det er derfor vigtigt at man i programmeringsfasen laver korrekt parsing, eventuelt kan man køre sin kode gennem en validator<sub>3</sub> for at tjekke for fejl og mangler. </p>
+        <p>F.eks. hvis et HTML tag ikke er korrekt afsluttet.. Hvis dette sker, kan skærmlæsere og andre hjælpemidler ikke aflæse indholdet. </p>
+        <p>Derudover er det også vigtigt, at webløsningen fungerer på tværs af forskellige platforme, browsere og enheder, så tilgængeligheden forhøjes. </p>
+        <!--ved godt at br-tagget er lidt udskældt, men vil gerne have en ekstra linje afstand mellem de her to afsnit, og kunne ikke lige hurske en hurtigere måde i øjeblikket. -->
+        <br>
+        <p>For at opsummere så er POUR bygget op omkring 4 WCAG-principper, som skal sikre webtilgængelighed for enhver. Det gøres ved at gøre information let forståelig, brug klart sprog og sikre nem betjening af hjemmesiden, samt sørge for teknologisk kompatibilitet. </p>
+        <div class="split"></div>
+        <h2 id="crap">C.R.A.P.</h2>
+        <p>Udover at der er nogle retningslinjer fra myndighedernes side til hvordan ens hjemmeside skal opfører sig, så er der også principper og generelle retningslinjer inden for UX-design. En af disse principper er kendt under betegnelsen "CRAP", som står for:</p>
+        <ul class="crap">
+          <li><b>C</b>ontrast (Kontrast)</li>
+          <li><b>R</b>epetition</li>
+          <li><b>A</b>lignment (Centrering)</li>
+          <li><b>P</b>romximity (Nærhed)</li>
+        </ul>
+        <p>Disse principper bruges til at forbedre brugerens oplevelse ved at skabe visuel klarhed, konsistens og effektiv kommunikation.</p>
+        <img class="crap_i" src="crap.jpg"
+          alt="overblik over design-princippet CRAP, omhandlende kontrast, repetition, centrering og nærhed">
+
+        <h3 id="con">Kontrast</h3>
+        <p>Formålet med kontrast er at skabe visuel interesse og differentiere vigtige elementer ved at få dem til at træde frem f.eks. gennem størrelse, skrifttype, farve og andre visuelle elementer.</p>
+        <p>Nedenstående eksempel kommer fra denne sides 'header' og fremviser kontrasten som er blevet skabt gennem farver. Den hvide tekstfarve mod den sorte baggrund. </p>
+            <img class="con_i" src="contrast.png"
+              alt="hjemmesidens logo, IBA i store fed bogstaver med markant mindre skrift nedenunder, hvor der står 'multimediedesign'">
+            <p>Derudover så er der også brugt kontrast i forhold til tekststørrelsen variation i form af, at de vigtigste elementer såsom overskrifterne og underoverskrifter er større end brødteksten.</p>
+
+            <h3 id="rep">Repetition</h3>
+            <p>Formålet med gentagelser er at skabe konsistens og genkendelighed for brugeren. "Identitetsmarkører" bruges ofte gentagne gange, såsom ikoner, farver og skrifttyper.</p>
+            <p>F.eks. så er der identitetsmarkører på både mobil-og desktop-versionen, men vi tager udgangspunkt i nedenstående grafik, som er fra mobilversionen. </p>
+            <p>Grafikken viser en klar sammenhæng mellem den turkisblå farve og vigtige elementer på siden. Det ses ved at farven vises når du hover over menupunkterne, forstørrelsesglasset ved søgefeltet og den bruges også til overskrifter og underoverskrifter på siden.</p>
+           <img class="rep_i"  src="repetition.png"
+            alt="screenshot af mobilversionens åben burgermenu, som viser den gentagende brug af turkis farve ved aktiv-effekt og forstørrelsesglasset i samme farve. Den farve bruges også til overskrifterne">
+    
+            <p>Yderligere bruges der også 2 teksttyper: Ropa Sans og Ariel, som gør det lettere for brugeren at genkende og forstå hvad der er overskrifter og hvad der er brødtekst.</p>
+            <p>Det vil sige, at brugeren genkender og forstår, hvordan forskellige dele af interfacet relaterer til hinanden.</p>
+
+            <h3 id="cen">Centrering</h3>
+            <p>Formålet med centrering er at skabe orden og struktur. Hvis en hjemmeside mangler centrering, vil det få siden til at se rodet og kaotisk ud, hvilket gør det svært for brugeren at navigere rundt på siden, samt fastholde deres fokus. </p>
+            <p>Det er derfor vigtigt at justere alt med vilje. Her på siden sker det f.eks. i form af venstre-justering, som gør det nemmere at læse for brugeren. Derudover flugter overskrifterne og brødteksten med hinanden.
+            </p>
+
+            <h3 id="nae">Nærhed</h3>
+            <p>Formålet med nærhed er at organisere indholdet på en måde, som gør det nemt for brugeren at identificere, hvad der relaterer til hinanden.</p>
+            <p>Alt i alt hjælper afstand brugeren med at forstå, hvilke elementer hører sammen og forbedrer overordnet information hierarkiet. </p>
+            <p>Når man placer relaterede elementer tættere på hinanden for at signalere deres tilhørsforhold og organisatoriske sammenhæng. Hjælper brugeren med at forstå, hvilke elementer hører sammen, og forbedrer overordnet information hierarkiet. </p>
+
+            <h3>CRAP for at undgå "crap"</h3>
+            <p>Ved at forstå CRAP-principperne kan du konsekvent levere et effektivt design, uanset hvilket medie det gælder. De fire design praksisser er med til at forklare, hvordan vores hjerne organiserer visuel information og skaber meningsfulde og sammenhængende visuelle indtryk. </p>
+
+            <div class="split"></div>
+
+            <h2 id="gestalt">Gestaltlovene</h2>
+            <p>Ligesom CRAP så er Gestaltlovene en række designprincipper, som har til formål at beskrive den måde vi opfatter visuelle inputs og organiserer dem, så de giver mening for os. Gestaltlovene har rødder i psykologien, men bliver den dag i dag oftest brugt som et designredskab for især digitale medier.</p>
+
+            <h3 id="nae2">Nærhed</h3>
+            <p>Elementer, der er tættere på hinanden, vil blive opfattet som værende relaterede og hører sammen. </p>
+            <p>Eksempelvis når du ser en liste som er punktopstillet, vil nærheden mellem hvert punkt indikerer at de er en sammenhængende liste. Det er der flere eksempler af på denne ide.</p>
+            <p>Et andet eksempel på gestalt loven om nærhed, ses nedenfor. Det er en illustration, der viser to forskellige samlinger. Den første samling opfattes som at være en gruppe, hvor cirklerne på en eller anden måde er relateret til hinanden. Den anden samling opfattes som værende to grupper, og forståes som at der er en forskel mellem dem (også selvom de ligner hinanden, da der er afstand mellem dem). </p>
+
+            <img class="nae_i" src="naer.png" alt="3 rækker med 3 cirkler, som lægger sig op ad hinanden. Mellemrum. 1 række med 3 cirkler, større mellemrum og så 2 rækker med 3 cirkler.">
+
+
+            <h3 id="ligh">Lighed</h3>
+            <p>Elementer, der deler fælles træk som form, farve eller størrelse, vil blive opfattet som værende tilhørende den samme gruppe. </p>
+            <p>Hjemmesiden er opdelt i overskrifter, underoverskrifter og brødtekst, hvor vi ved hjælp af, at anvende samme skrifttype, størrelse og farve får dem til at blive opfattet som en enhed grundet lighedsgraden.</p>
+            <img class="lighed_i" src="lighed.png" alt="tre rækker med tre cirkler i hver række. To af rækkerne er blå og tredje række er sort.">
+
+            <h3 id="luk">Lukkethed</h3>
+            <p>Vi - mennesker - har tendens til at se ufuldstændige figurer, som fuldstændige eller “lukkede”, så længe at elementerne er arrangeret på en måde, der antyder en sammenhæng.</p>
+            <p>Et klassisk eksempel på dette, er en ufuldstændig cirkel, som ofte vil blive opfattet som hel, så længe at åbningen er lille nok. </p>
+            <img class="luk_i" src="lukket.png" alt="en cirkel med 3 små huller">
+
+            <h3 id="kon">Kontinuitet</h3>
+            <p>Elementer, som er arrangeret på en lineær måde eller i en kontinuerlig strøm, vil blive opfattet som relaterede og derfor vil vi være mere tilbøjelig til at se den som en enhed. </p>
+            <p>F.eks. en række pletter er arrangeret i en kontinuerlig linje, som vil blive opfattet som en sammenhængende enhed snarere end separate elementer.</p>
+            <img class="kon_i" src="kon.png" alt="To linjer som møder hinanden, hvor en tredje lægger sig ovenfor men istedet for at værende sammenhængende er den lavet af en række-pletter.">
+
+            <h3 id="fb">Figur og baggrund</h3>
+            <p>Vi har til tendens at opfatte objekter, som enten en central figur eller som baggrund, afhængigt af hvordan de er arrangeret i forhold til hinanden. </p>
+            <p>Nedenstående illustration fremviser 3 ufuldkommende cirkler, som via måden de er arrangret på også  skaber en trekant.</p>
+            <img class="fb_i" src="fb.png" alt="fremviser 3 ufuldkommende cirkler, som i midten viser en trekant grundet måden cirklerne er arrangeret på">
+            <br>
+            <p>I sidste ende bidrager Gestaltlovene til at optimere visuel kommunikation og design ved at tage højde for, hvordan menneskets hjerne opfatter og organiserer visuel information. De er derfor en vigtig grundsten inden for grafisk design.
+            </p>
+      </section>
+
+
+
+    </main>
+  </div>
+  <footer>
+    <div class="footnote">
+      <p><sub>1</sub>World Wide Web Consortium, n.d. <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"><i>Web Content Accessibility Guidelines (WCAG) 2.1.</i></a> [Online] W3, accessed November 20, 2023</p>
+      <p><sub>2</sub> World Health Organization, 2023 <a href="https://www.who.int/news-room/fact-sheets/detail/disability-and-health"><i>Disability</i></a> [Online] WHO, accessed Novemeber 18, 2023</p> 
+      <p><sub>3</sub>World Wide Web Consortium, n.d. <a href="https://validator.w3.org/#validate_by_upload"><i>Markup Validation Service</i></a>[Online] W3, accessed November 22, 2023</p>
+    </div>
+
+    <div class="container">
+      <p>
+        IBA Erhvervsakadami Kolding | Havneparken 1 | Tlf. 72 11 82 00 | Email: iba@iba.dk | cvr: 31642124 | ean:
+        5798000560260</p>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  var toggle = document.getElementById("menu_toggle")
+
+  var menuItems = document.getElementsByClassName("menu_items")
+
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', () => {
+      toggle.checked = false;
+    })
+  }
+</script>
+
+</html>

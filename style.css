@@ -1,0 +1,525 @@
+@font-face {
+    font-family: ropa sans;
+    src: url("RopaSans-Regular.ttf");
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+  
+}
+
+header{
+    background:#1D1D1B;
+    color:#F4F4F1;
+}
+
+main{
+  margin-bottom: 2rem;
+}
+
+.iba{
+  max-height: 3.5rem;
+  display: block;
+  padding-top: 0.5rem;
+  padding-left:1rem;
+}
+
+.colour{
+  background-color: #00AAAD;
+  margin-top: 0.25rem;
+  height: 0.5rem;
+
+}
+
+.wrapper{
+    background:#F4F4F1;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/*Flere af testpersonerne + Morten har nævnt det med at text-align vil give mest hvis den er venstresidet. Det har jeg så fikset, selvom jeg er mere til justify, da det giver et mere æstetisk look.*/
+section {
+  max-width: 80vw;
+  margin-top:0.5rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  color:#333333;
+  overflow-x:hidden;
+  text-align: left;
+}
+
+h1{
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: ropa sans;
+    font-size: 2.25rem;
+    color:#00AAAD;
+    font-weight: 400;
+    text-align: left;
+}
+
+h2{
+    margin-top: 2rem;
+    font-family: ropa sans;
+    font-size: 1.75rem;
+    color:#00AAAD;
+    font-weight: 200;
+    text-align: left;
+}
+
+h3{
+  margin-top: 2rem;
+  font-family: ropa sans;
+  font-size: 1.5rem;
+  color:#00AAAD;
+  font-weight: lighter;
+  text-align: left;
+}
+
+p{
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  text-wrap: break-word;
+  
+}
+
+/*tal til footnote*/
+sub{
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.digital_i{
+  max-width: 80%;
+  display:flex;
+  margin: 2rem auto;
+}
+
+.web_i{
+  max-height:25rem; 
+  max-width: 80%;
+  display:flex;
+  margin: 3rem auto;
+} 
+
+.pour{
+  margin:0.5rem auto;
+  
+}
+.pour li{
+  margin:1rem;
+  margin-left:0;
+  list-style: none;
+  
+}
+
+.pour_i{
+  max-width: 80%;
+  display: flex;
+  margin: 3rem auto;
+}
+
+
+.per_i{
+  max-width: 80%;
+  display: flex;
+  margin:2.5rem auto;
+}
+
+.op_l li{
+  margin:1.5rem;
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: lighter;
+}
+
+.crap li{
+  margin:1rem 0;
+  list-style: none;
+}
+.crap_i{
+  max-width: 80%;
+  display: flex;
+  margin:2.5rem auto;
+}
+
+.con_i{
+  max-width: 100%;
+  display: flex;
+  margin:2.5rem auto;
+}
+.rep_i{
+  max-width: 80%;
+  display: flex;
+  margin:2.5rem auto;
+}
+
+.pro_i{
+  max-width: 80%;
+  display: flex;
+  margin:3rem auto;
+}
+
+.fb_i{
+  max-width: 80%;
+  max-height:15rem;
+  display: flex;
+  margin:2rem auto;
+}
+
+.lighed_i{
+  max-width: 80%;
+  max-height:12rem;
+  display: flex;
+  margin:2rem auto;
+}
+
+.luk_i {
+  max-width: 80%;
+  max-height:12rem;
+  display: flex;
+  margin:2rem auto;
+}
+
+.kon_i{
+  max-width: 80%;
+  max-height:12rem;
+  display: flex;
+  margin:2rem auto;
+}
+
+.nae_i{
+  max-width: 80%;
+  max-height:12rem;
+  display: flex;
+  margin:2rem auto;
+}
+
+.split{
+  border-top: solid 0.2rem;
+  color: silver;
+  margin-top:2rem;
+}
+
+.utest_i{
+  max-width: 80%;
+  display: flex;
+  margin:2rem auto;
+}
+
+.guide{
+  margin: 1rem auto;
+}
+
+.h_guide{
+  font-weight: bold;
+  margin: 0;
+}
+
+._guide {
+  margin-top:0rem;
+  margin-bottom: 1.5rem;
+  list-style:none;
+  
+}
+
+/*Del af footeren*/
+.footnote{
+  padding: 1rem 2rem ;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F4F1;
+  border-top:solid 0.15rem;
+  border-color: silver;
+}
+
+
+
+.container{
+  background-color: #00AAAD;
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-family: ropa sans;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*mobil version - laves ud fra anbefaling om mindre skærme (mobile og mindre tablets) */
+@media only screen and (max-width: 600px) {
+  /*Det her er grimt, hvis den ikke sættes til en speciel height for mobile version, så det var lige hvad der kunne gøres i øjeblikket*/
+  header{
+    height:4.2rem;
+  }
+  main {
+    margin: 0 auto;
+  }
+  /*'fjernelse' af desktop-versionens tags*/
+  .nav_menu{
+    display: none;
+  }
+  aside{
+    display:none;
+  }
+  .sidebar{
+    display: none;
+  }
+
+
+
+  /* inspiration til burgermenuen til mobilversionen er fundet på codepen.io (https://codepen.io/andreykrokhin/pen/mGEqja)*/
+  #menu_toggle {
+    opacity: 0;
+  }
+  
+  #menu_toggle:checked ~ .menu_btn > span {
+    transform: rotate(45deg);
+  }
+  #menu_toggle:checked ~ .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu_toggle:checked ~ .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu_toggle:checked ~ .menu_box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu_btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+  
+    width: 1.6rem;
+    height: 1.6rem;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu_btn > span,
+  .menu_btn > span::before,
+  .menu_btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 0.125rem;
+  
+    background-color: #F4F6F8;
+  
+    transition-duration: .25s;
+  }
+  .menu_btn > span::before {
+    content: '';
+    top: -0.5rem;
+  }
+  .menu_btn > span::after {
+    content: '';
+    top: 0.5rem;
+  }
+  
+  .menu_box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 18.75rem;
+    height: 100%;
+  
+    margin: 0;
+    padding: 5rem 0;
+  
+    list-style: none;
+  
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  
+  .menu_item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #F4F6F8;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+
+  .menu_items{
+    display: block;
+    padding: 1rem 1.5rem;
+    padding-left:3rem;
+    color: #F4F6F8;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+
+  .menu_item:hover,
+  .menu_items:hover  {
+    background-color: #00AAAD;
+  }
+
+  nav ul {
+    list-style: none;
+    padding:0.5rem;
+    display: block;
+    color: #F4F6F8;
+    font-family: 'ropa sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  nav ul .menu_items{
+    font-size: 1rem;
+  }
+
+
+  /* search bar right align*/
+  .search input[type=text]{
+    width:100%;
+    height:100%;
+    border: none;
+  }
+     
+  .search{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    height: 1.7rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+  }
+     
+  .search_button{
+    background-image: url('buttons.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0.8125rem;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 2.125rem;
+  } 
+}
+
+/*desktop version*/
+@media only screen and (min-width: 600px) {
+  /*ved godt at den overflower mærkligt på nogle width. Ved ikke lige hvordan jeg fikser det*/
+  main{
+    padding:0 4rem;
+    width: 100%;
+  }
+  /*Fjernelse af mobile-version*/
+  .hamburger-menu{
+    display: none;
+  }
+
+  .web_i{
+    display: none;
+  }
+   /*topnavigation for desktopversion*/
+  .header_content{
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .menu_text2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style: none;
+    margin-right:2rem;
+    gap:2rem;
+    font-size: 1.25rem;
+  }
+
+  
+  .menu_item2{
+      color:#F4F4F1;
+      text-decoration: none;
+  }
+
+  .menu_item2:hover{
+      color: #00AAAD;
+  }
+
+   .space{
+      cursor:default;
+  }
+    
+  .sidebar {
+    max-width: 20%;
+    min-width: 12rem;
+    border-right:solid 0.1rem;
+    border-color: silver;
+    max-height: 100vh;
+  }
+
+ 
+  h5{
+    margin-top: 3rem;
+    padding-left:1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.15rem;
+  }
+
+ 
+  .sidebar_list li{
+    list-style: none;
+  }
+    
+  .sidebar_{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+
+  }
+
+  .sidebar_ a{
+    text-decoration: none;
+    color: #636363;
+    
+  }
+  
+.sidebar_ a:hover,
+.sidebar_2 a:hover{
+    color: #00AAAD;
+  }
+  .sidebar_2{
+    margin-top:0.5rem;
+    margin-left:0.7rem;
+    font-size: 0.95rem;
+  }
+.sidebar_2 a{
+  text-decoration: none;
+  color: #636363;
+}
+  
+  .sidebar_ 
+  body {
+    background-color: #F4F4F1;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+  }
+
+  .digital{
+    height:25rem;
+  }
+}
+
+

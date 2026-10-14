@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brugertest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_content"><img class="iba" alt="iba multimediedesign logo" src="logo.png">
+      <!--Navigation til desktopversion-->
+      <nav class="nav_menu">
+        <ul class="menu_text2">
+          <li><a class="menu_item2" href="index.html">Webtilgængelighed</a></li>
+          <li class="space">|</li>
+          <li><a class="menu_item2" href="brugertest.html">Brugertest</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="colour"></div>
+
+    <!-- Burgermenu til mobilversionen-->
+    <div class="hamburger-menu">
+      <input id="menu_toggle" type="checkbox" />
+      <label class="menu_btn" for="menu_toggle">
+        <span></span>
+      </label>
+
+      <nav class="menu_box">
+        <div class="search">
+          <input type="text" placeholder="Søg..." name="search">
+          <div class="search_button"></div>
+        </div>
+        <ul class="menu_text">
+          <li><a class="menu_item" a href="brugertest.html">Brugertest</a></li>
+          <li><a class="menu_item" href="index.html">Webtilgængelighed</a></li>
+          <li><a class="menu_items" href="#pour">POUR</a></li>
+          <li><a class="menu_items" href="#crap">CRAP-Principperne</a></li>
+          <li><a class="menu_items" href="#gestalt">Gestaltlovene</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Laver en div/wrapper som er omkring main-content og sidebar, ligesom det er beskrevet på dev.to, da <main> kun må have et barn.-->
+    <div class="wrapper">
+      <div class="sidebar">
+        <h5>Brugertest</h5>
+        <ul class="sidebar_list">
+          <li class="sidebar_"><a href="#intro">Introduktion</a></li>
+          <li class="sidebar_"><a href="#u_test">Usability test</a></li>
+          <li class="sidebar_2"><a href="#guide">Guide</a></li>
+          <li class="sidebar_"><a href="#data">Testdata</a></li>
+          <li class="sidebar_2"><a href="#v_data">Egne data</a></li>
+          <li class="sidebar_2"><a href="#after">Ændringer</a></li>
+    
+        </ul>
+      </div>
+    <main>
+      <section>
+        <h1 id="intro">Brugertest</h1>
+        <p>En brugertest er en metode inden for brugeroplevelse design og produktudvikling. Den anvendes til at evaluere, hvor let og effektivt en person kan bruge det pågældende produkt, system eller service. </p>
+        <p>Formålet med en brugertest er at identificere eventuelle problemer eller udfordringer, som brugere kan støde på, mens de interagerer med det testede produkt
+          </p>
+          <img class="utest_i" src="guide.png" alt="billede af tre vigtige points for brugertest: identificer problemet i designet, find forbedringer til designet og lær din målgruppe at kende.">
+        <h2 id="u_test">Usability test</h2>
+        <p>Den mest grundlæggende type brugertest, hvor deltagere udfører specifikke opgaver ved hjælp af produktet, mens observatører registrerer deres adfærd og eventuelle problemer. </p>
+        <p>Formålet er at evaluere, hvor brugervenligt produktet er.</p>
+
+        <h3 id="guide">En guide til en vellykket test</h3>
+        <p>For at sikre sig en vellykket brugertest er der flere forberedende trin, som man bør gennemføre. Her er et par  af de trin, som du bør have fuldført inden du starter din test.</p>
+
+        <div class="guide">
+          <p class="h_guide">Definer mål og formål:</p>
+          <p class="_guide">Identificer formålet med testen og de specifikke mål, du ønsker at opnå.</p>
+          <p class="h_guide">Identificer målgruppen:</p>
+          <p class="_guide">Definer din målgruppe nøje. Her vil man f.eks. oprette personas ud fra de brugere, du ønsker at teste produktet med.</p>
+          <p class="h_guide">Udvælg testopgaver:</p>
+          <p class="_guide">Identificer de opgaver, som du ønsker, at brugerne skal udføre under testen. Opgaverne bør afspejle reelle scenarier og interaktioner, som brugeren vil stå over for i den virkelige verden.</p>
+          <p class="h_guide">Udarbejd en test guide:</p>
+          <p class="_guide">Opret en detaljeret brugertest guide, der indeholder oplysninger om testopgaver, spørgsmål og anden relevant information</p>
+          <p class="h_guide">Rekrutter testdeltagere:</p>
+          <p class="_guide">Identificer og rekrutter deltagere, der repræsenterer din målgruppe.</p>
+          <p class="h_guide">Backup plan:</p>
+          <p class="_guide">Overvej eventuelle uforudsete problemer og udarbejd en backup plan..</p>
+          </div>
+        <p>Ved at udføre disse forberedende trin grundigt kan du maksimere værdien af din brugertest og sikre, at testen udføres effektivt og ordentligt.</p>
+
+        <div class="split"></div>
+
+
+        <h2 id="data">Brugertest data</h2>
+        <p>Når du har færdiggjort din brugertest, vil du have en del data. Men hvad skal den egentlig bruges til?</p>
+        <p>Og hvordan?</p>
+        
+        <p>Helt enkelt, så skal du evaluere og fortolke den indsamlede data. Det er en helt afgørende fase for at identificere mønstre, problemer og succeser, og senere hen tage beslutninger om produktforbedring.</p>
+        <p>Før vi kan fortolke, skal du først organisere den indsamlede data. Det gøres ved at kategorisere den, så dataen er let tilgængelig og kan forstås klart. </p>
+        <p>Når dataen er organiseret kan du endelig begynde at analysere den. Det gøres f.eks. ved at man sammensætter vigtige temaer, holdninger eller udfordringer, som dukkede op under testen. </p> <p>Herefter kan vi så identificere konkrete problemer eller udfordringer, som brugeren stødte på under testen. </p>
+        <p>Dog skal det også huskes, at anerkende de elementer, som fungerede og bidragede til en positiv brugeroplevelse.</p>
+
+        <h3 id="v_data">Egne data</h3>
+        <p>Gennem vores brugertest oplevede vi en generel konsensus om, at førstehåndsindtrykket af hjemmesiden var godt og overskueligt, samt at den havde følelsen af, at være en informationsside lidt ala wikipedia<sub>2, 3</sub>. Hvilket stemmer overens med det vi ønskede. </p> <p>Derudover var der også bred enighed om, at hjemmesidens navigation (både på desktop og mobil) virker intuitiv og er nem at bruge.</p> 
+        <p>Det blev også nævnt, at produktet er responsivt, hvilket gjorde det muligt for alle deltagerne at afprøve produktet på diverse elektroniske platforme<sub>3</sub>. </p>
+        <p>Vi fik også identificeret et par udfordringer, som brugerne oplevede under testen. Blandt andet (bl.a.) fortalte 2/3 dele af deltagerne, at de fandt tekst justeringen til at være en hindring i deres læsning af siden. </p>
+        <p>Dertil blev der også nævnt af 1/3 del af deltagerne, at de godt kunne tænke sig mere afstand mellem tekst-indholdet, overskrifter og billeder.<sub>4</sub></p>
+
+        <h2 id="after">Ændringer baseret på brugertest</h2>
+        <p>På baggrund af de identificerede problemer, valgte design-teamet (aka mig) at ændre ‘text-align’ i HTML’en til at være venstrejusteret i stedet for lige margener. </p> 
+        <p>Yderligere så rettede vi også afstanden mellem overskrifter og brødtekst, samt billeder og brødtekst for at give en mere afbalanceret følelse når brugeren læser indholdet på siden.</p>
+        <br>
+        <br>
+       
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <footer>
+      <div class="footnote">
+        <p><sub>1</sub>Dumas, J.S. (1993) <i>A practical guide to usability testing.</i> Ablex Publishing Corporation.
+        </p>
+        <p><sub>2</sub>Burgeess, A.A (2023). Interview by Anita Steffensen [Teams], 23 November</p>
+        <p><sub>3</sub>Eriksen, S.E. (2023) Interview by Anita Steffensen [Teams], 23 November</p>
+        <p><sub>4</sub>Gommesen, A.H (2023) Interview by Anita Steffensen [Teams], 23 November</p>
+
+      </div>
+
+      <div class="container">
+        <p>
+          IBA Erhvervsakadami Kolding | Havneparken 1 | Tlf. 72 11 82 00 | Email: iba@iba.dk | cvr: 31642124 | ean:
+          5798000560260</p>
+      </div>
+    </footer>
+
+</body>
+
+<script>
+  var toggle = document.getElementById("menu_toggle")
+
+  var menuItems = document.getElementsByClassName("menu_items")
+
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', () => {
+      toggle.checked = false;
+    })
+  }
+</script>
+
+</html>

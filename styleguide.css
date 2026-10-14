@@ -1,0 +1,57 @@
+
+/* Styleguide (skal være uden punktum ved tal for at kunne afslutte kommentaren)
+ Body
+
+    2 Header /
+        2 1 Navigation / .navmenu / .hamburger-menu
+            2 2 Sidebar / .sidebar
+
+    
+    3 Main / Content / .section
+        3 1  Section 1 / 
+            3.1.1 Pour / #pour
+            3.1.2 Crap / #crap
+            3.1.3 Repetion / #rep
+            3.1.4 Centrering / #cen
+            3.1.5 Nærhed / #nae
+            3.1.6 Gestalt / #gestalt
+        3 2 Section 2 /
+            3 2 1 Nærhed / #nae2
+            3 2 2 Lighed / #ligh
+            3 2 3 Kontinuitet / #kon
+            3 2 4 Figur og baggrund / #fb
+    4. Footer 
+
+    h1 {
+        color: #00AAAD;
+        font-family: ropa sans;
+        font-size: 2.25rem;
+        font-weight:400;   
+    }
+
+    h2 {
+        color: #00AAAD;
+        font-family: ropa sans;
+        font-size: 1.75rem;
+        font-weight: 200;
+       
+    }
+
+    h3 {
+        color: #00AAAD;
+        font-family: ropa sans;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        
+    }
+
+    p {
+        color:#333333;
+        font-family: arial;
+        font-size:1.1rem;
+    }
+   --------------!>
+
+        
+    
+    
